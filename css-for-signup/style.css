@@ -47,15 +47,16 @@ form input{
     outline: none;
 }
 
-input[type="button"]{
+.buttonstyle{
     width: 320px;
     height: 35px;
     margin-top: 20px;
     border: none;
-    background-color: #49c1a2;
+    background-color: rgb(13, 87, 71);
     color: #fff;
     font-size: 18px;
 }
+
 
 p{
     text-align: center;
