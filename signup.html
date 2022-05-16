@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
     <link rel="stylesheet" href="css-for-signup/style.css">
-    
+    <link rel="stylesheet" href="./Fonts/gilroy/stylesheet.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500,600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="signup-box">
@@ -14,21 +17,31 @@
         <h4>It's free and only takes a minute</h4>
         <form>
             <label>First Name</label>
-            <input type="text" placeholder="">
+            <!-- <input type="text" placeholder=""> -->
+            <input id="FirstNameInput" type="text" placeholder="First name">
             <label>Last Name</label>
-            <input type="text" placeholder="">
+            <!--<input type="text" placeholder=""> --->
+            <input id="LastEmailInput" type="text" placeholder="Last name">
             <label>Email</label>
-            <input type="email" placeholder="">
+            <!--<input type="email" placeholder=""> -->
+            <input id="EmailInput" type="email" placeholder="Email">
             <label>Password</label>
-            <input type="password" placeholder="">
+            <!-- <input type="password" placeholder=""> -->
+            <input id="PasswordInput" type="password" placeholder="Password">
             <label>Confirm Password</label>
-            <input type="password" placeholder="">
-            <input type="button" value="Submit">
+            <input id="ConfirmPasswordInput" type="password" placeholder="Confirm password">
+            <!-- <input type="password" placeholder=""> -->
+            <!-- <input type="button" value="Submit onclick="getVal()"">-->
+
+            <button class="buttonstyle" onclick="getVal()"> Submit</button>
+
+            <script src="signup.js"></script>
+
         </form>
-        <p>By clicking the Sign Up button, you agree to our<br>
-        <a href="#">Terms and Condition</a> and <a href="#">Policy and Privacy</a>
-        </p>
-    </div>
-    <p class="para-2">Already have an accoun? <a href="login.html">Login here</a> </p>
-</body>
-</html>
+            <p>By clicking the Sign Up button, you agree to our<br>
+            <a href="#">Terms and Condition</a> and <a href="#">Policy and Privacy</a>
+            </p>
+        </div>
+        <p class="para-2">Already have an account? <a href="login.html">Login here</a> </p>
+    </body>
+    </html>
